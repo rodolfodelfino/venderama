@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venderama - Camisetas Personalizadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionais para a logo */
+        .logo {
+            max-width: 150px; /* Ajuste o tamanho máximo conforme necessário */
+            margin: 10px auto; /* Centraliza a logo */
+            display: block; /* Faz a logo ocupar o espaço correto */
+        }
+        .header {
+            text-align: center; /* Centraliza o texto no cabeçalho */
+        }
+        /* Estilos do carrossel */
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%; /* Limita a largura do carrossel */
+            margin: 20px auto; /* Centraliza o carrossel */
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            min-width: 100%; /* Cada item ocupa 100% da largura do carrossel */
+            box-sizing: border-box;
+        }
+        .carousel img {
+            width: 100%; /* Faz a imagem ocupar toda a largura do item */
+            display: block; /* Remove espaço em branco abaixo da imagem */
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10;
+        }
+        .prev {
+            left: 10px; /* Posição do botão anterior */
+        }
+        .next {
+            right: 10px; /* Posição do botão próximo */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo venderama site.png" alt="Logo da Venderama" class="logo"> <!-- Campo para a logo -->
+        <h1>Venderama - Personalize sua Camiseta!</h1>
+        <p>Camisetas 100% Algodão Premium, feitas para você, do seu jeito!</p>
+    </header>
+
+    <section class="cta">
+        <h2>Crie sua Camiseta do Jeito que Você Sempre Quis</h2>
+        <p>Envie sua ideia, imagem ou frase e nós cuidamos do resto. Personalize com seu estilo, tema ou ocasião. Envio para todo o Brasil.</p>
+        <div class="cta-container">
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de criar minha camiseta personalizada." target="_blank">
+                <button class="cta-button">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp"> Envie suas ideias pelo WhatsApp
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Inspire-se com Nossas Criações</h2>
+        <p>Confira algumas das camisetas personalizadas que já criamos para nossos clientes. Deixe a criatividade fluir e tenha a sua do seu jeito!</p>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="img/imagem-vitrine 1.png" alt="Camiseta Personalizada 1"></div>
+                <div class="carousel-item"><img src="img/imagem-vitrine 2.png" alt=" camiseta Personalizada 2"></div>
+                <div class="carousel-item"><img src="img/imagem-vitrine 3.png" alt="Camiseta Personalizada 3"></div>
+                <div class="carousel-item"><img src="img/imagem-vitrine.png" alt="Camiseta Personalizada 4"></div>
+                <div class="carousel-item"><img src="img/imagem-vitrine 4.png" alt="Camiseta Personalizada 4"></div>
+                <div class="carousel-item"><img src="img/imagem-vitrine 5.png" alt="Camiseta Personalizada 4"></div>
+                <div class="carousel-item"><img src="img/imagem-vitrine 6.png" alt="Camiseta Personalizada 4"></div>
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="steps">
+        <h2>Como Funciona?</h2>
+        <div class="step">
+            <h3>1. Envie sua Arte ou Texto</h3>
+            <p>Clique no botão e nos mande sua ideia pelo WhatsApp. Criamos a arte da estampa sem custo adicional.</p>
+        </div>
+        <div class="step">
+            <h3>2. Personalizamos para Você</h3>
+            <p>Nossa equipe vai transformar sua ideia em uma camiseta de alto padrão, pronta para vestir.</p>
+        </div>
+        <div class="step">
+            <h3>3. Receba em Todo o Brasil</h3>
+            <p>Enviamos seu pedido para qualquer lugar do Brasil. Qualidade e rapidez garantidas.</p>
+        </div>
+
+        <div class="step">
+            <h3>4. Parcele em Até 6 Vezes no Cartão.</h3>
+            <p>Você pode parcelar sua compra até 6 Vezes no Cartão sem Juros.</p>
+        </div>
+
+        <div class="step">
+            <h3>5. Primeira Troca Grátis.</h3>
+            <p>Se for Necessário, pode fazer a Primeira Troca Grátis do Produto.</p>
+        </div>
+
+        
+    </section>
+    <section class="cta">
+        <h2>Entre em Contato Agora e Saiba Mais!</h2>
+        <p>Envie sua ideia, imagem ou frase e nós cuidamos do resto. Personalize com seu estilo, tema ou ocasião. Envio para todo o Brasil.</p>
+        <div class="cta-container">
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de criar minha camiseta personalizada." target="_blank">
+                <button class="cta-button">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp"> Envie suas ideias pelo WhatsApp
+                </button>
+            </a>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <p>© 2024 Venderama - Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <script>
+        let currentIndex = 0; // Índice da imagem atual
+
+        function moveSlide(direction) {
+            const track = document.querySelector('.carousel-track');
+            const slides = document.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            // Atualiza o índice da imagem atual
+            currentIndex += direction;
+
+            // Reseta o índice se ultrapassar o número de slides
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1; // Vai para a última imagem
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0; // Volta para a primeira imagem
+            }
+
+            // Mover o carrossel
+            const offset = -currentIndex * 100; // Calcula o deslocamento
+            track.style.transform = `translateX(${offset}%)`; // Aplica o deslocamento
+        }
+    </script>
+</body>
+</html>

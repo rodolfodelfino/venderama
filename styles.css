@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9dc5c;
+    color: #332f63;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #332f63;
+    color: #f9dc5c;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9dc5c;
+}
+
+.cta h2 {
+    font-size: 2em;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.carousel-item img{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+}
+
+.cta-button {
+    background-color: #f76b5e00; /* Mantém o botão principal */
+    color: #332f63;
+    padding: 15px 30px;
+    border: none; /* Remove borda do botão */
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex; /* Ajusta para alinhar ícone e texto */
+    align-items: center;
+    justify-content: center; /* Alinha ao centro */
+    text-align: center;
+    text-decoration: none;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão na página */
+    align-items: center;
+    width: 100%;
+}
+
+.cta-button a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Garante que a cor do texto siga a do botão */
+}
+
+.cta-button img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: none; /* Remove cor de fundo */
+    border: none; /* Remove borda */
+}
+
+.whatsapp-btn:hover {
+    background-color: #f76c5e;
+}
+
+.gallery {
+    padding: 40px 20px;
+    background-color: #332f63;
+    color: #f9dc5c;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.steps {
+    padding: 40px 20px;
+    background-color: #f9dc5c;
+    color: #332f63;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1.1em;
+}
+
+.footer {
+    background-color: #332f63;
+    color: #f9dc5c;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer a {
+    color: #f9dc5c;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1, .cta h2, .gallery h2, .steps h2 {
+        font-size: 1.8em;
+    }
+
+    .cta p, .steps p, .gallery p {
+        font-size: 1em;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 90%;
+        height: auto;
+    }
+}
